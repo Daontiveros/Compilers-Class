@@ -1,0 +1,12 @@
+@main {
+  v: int = const 4; 
+  br cond .loop1 .loop2
+  print v;
+.loop1:
+  print v;
+.loop2:
+  print v;
+.merge:
+  jmp .loop1;
+}
+
